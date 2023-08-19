@@ -17,8 +17,16 @@ const gameboard = (() => {
     const setCells = (index, symbol) => {
         _cells[index] = symbol;
     };
+    const reset = () => {
+        _cells.forEach((element, index, array) => {
+            array[index] = null;
+        });
+        console.log("Resetting game....");
+        console.log("....");
+        console.log(_cells);
+    };
 
-    return { showCells, setCells };
+    return { showCells, setCells, reset };
 })();
 
 // Module pattern for gameController
@@ -47,3 +55,4 @@ gameboard.showCells();
 gameController.switchPlayer();
 gameController.setPlayerMove(0);
 gameboard.showCells();
+gameboard.reset();

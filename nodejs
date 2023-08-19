@@ -313,4 +313,67 @@ O
 [?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
 [?2004lGame start. Player 1 goes first.
 Switched to Player 2's turn.
-[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubu
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004lGame start. Player 1 goes first.
+[
+  [1mnull[22m, [1mnull[22m, [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 2's turn.
+[
+  [32m'O'[39m,  [1mnull[22m, [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004lGame start. Player 1 goes first.
+[
+  [1mnull[22m, [1mnull[22m, [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 2's turn.
+[
+  [32m'O'[39m,  [1mnull[22m, [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004l[
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004lGame start. Player 1 goes first.
+[
+  [1mnull[22m, [1mnull[22m, [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 2's turn.
+[
+  [32m'O'[39m,  [1mnull[22m, [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004lGame start. Player 1 goes first.
+[
+  [1mnull[22m, [1mnull[22m, [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 2's turn.
+[
+  [32m'O'[39m,  [1mnull[22m, [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+[
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-ta
