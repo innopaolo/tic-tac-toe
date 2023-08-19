@@ -9,27 +9,41 @@ const player2 = createPlayer("Player 2", "O");
 
 // Module Pattern for gameboard
 const gameboard = (() => {
-    const _cells = ["X", "X", "X", "X", "X", "X", "X", "X", "X" ];
-    console.log(_cells);
+    const _cells = [null, null, null, null, null, null, null, null, null ];
+
+    const showCells = () => {
+        console.log(_cells);
+    }
+    const setCells = (index, symbol) => {
+        _cells[index] = symbol;
+    };
+
+    return { showCells, setCells };
 })();
 
 // Module pattern for gameController
 const gameController = ((p1, p2) => {
-    let currentPlayer = null;
+    let _currentPlayer = null;
 
     const startGame = () => {
-        currentPlayer = p1;
+        _currentPlayer = p1;
         console.log(`Game start. ${p1.name} goes first.`);
     };
+    const setPlayerMove = (index) => {
+        gameboard.setCells(index, _currentPlayer.symbol);
+    };
     const switchPlayer = () => {
-        currentPlayer = (currentPlayer == p1) ? p2 : p1;
+        _currentPlayer = (_currentPlayer == p1) ? p2 : p1;
         console.log(`Switched to ${p2.name}'s turn.`)
     };
-    const  getCurrentPlayer = () => currentPlayer;
+    const  getCurrentPlayer = () => _currentPlayer;
     
-    return { startGame, switchPlayer, getCurrentPlayer };
+    return { startGame, switchPlayer, getCurrentPlayer, setPlayerMove };
 })(player1, player2);
 
 gameController.startGame();
-gameController.switchPlayer(player1, player2);
-console.log(gameController.getCurrentPlayer());
+gameController.setPlayerMove(2);
+gameboard.showCells();
+gameController.switchPlayer();
+gameController.setPlayerMove(0);
+gameboard.showCells();

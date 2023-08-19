@@ -228,4 +228,89 @@ Switched to Player 2's turn.
 Game start. Player 1 goes first.
 Switched to Player 2's turn.
 /home/inodlz/repos/tic-tac-toe/script.js:26
-        consol
+        console.log(`Switched to ${p2.name}'s turn.`)
+                                      ^
+
+TypeError: Cannot read properties of undefined (reading 'name')
+    at Object.switchPlayer [90m(/home/inodlz/repos/tic-tac-toe/[39mscript.js:26:39[90m)[39m
+    at Object.<anonymous> [90m(/home/inodlz/repos/tic-tac-toe/[39mscript.js:34:28[90m)[39m
+[90m    at Module._compile (node:internal/modules/cjs/loader:1254:14)[39m
+[90m    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)[39m
+[90m    at Module.load (node:internal/modules/cjs/loader:1117:32)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:958:12)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)[39m
+[90m    at node:internal/main/run_main_module:23:47[39m
+
+Node.js v18.16.0
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [H[2J]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004l[
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m
+]
+Game start. Player 1 goes first.
+Switched to Player 2's turn.
+{ name: [32m'Player 2'[39m, symbol: [32m'O'[39m }
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004l[
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m
+]
+Game start. Player 1 goes first.
+Switched to Player 2's turn.
+{ name: [32m'Player 2'[39m, symbol: [32m'O'[39m }
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004l[
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Game start. Player 1 goes first.
+Switched to Player 2's turn.
+{ name: [32m'Player 2'[39m, symbol: [32m'O'[39m }
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004l[
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Game start. Player 1 goes first.
+X
+Switched to Player 2's turn.
+{ name: [32m'Player 2'[39m, symbol: [32m'O'[39m }
+O
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004l[
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Game start. Player 1 goes first.
+X
+Switched to Player 2's turn.
+O
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004l[
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Game start. Player 1 goes first.
+X
+Switched to Player 2's turn.
+X
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004l[
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Game start. Player 1 goes first.
+X
+Switched to Player 2's turn.
+O
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004lGame start. Player 1 goes first.
+Switched to Player 2's turn.
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubu
