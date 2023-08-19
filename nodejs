@@ -1,0 +1,231 @@
+Script started on 2023-08-19 17:43:22+08:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="117" LINES="11"]
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004l[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004l{ name: [32m'Player 1'[39m, symbol: [32m'X'[39m }
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004l{ name: [32m'Player 1'[39m, symbol: [32m'X'[39m }
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004l{ name: [32m'Player 2'[39m, symbol: [32m'O'[39m }
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004l[
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m
+]
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004l[
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m
+]
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ gameController.[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Knode script.js
+[?2004l[
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m
+]
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004l[
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m
+]
+Game start. Player 1 goes first.
+/home/inodlz/repos/tic-tac-toe/script.js:26
+        currentPlayer = (currentPlayer === p1) ? p2 : p1;
+                                           ^
+
+ReferenceError: p1 is not defined
+    at Object.switchPlayer [90m(/home/inodlz/repos/tic-tac-toe/[39mscript.js:26:44[90m)[39m
+    at Object.<anonymous> [90m(/home/inodlz/repos/tic-tac-toe/[39mscript.js:34:16[90m)[39m
+[90m    at Module._compile (node:internal/modules/cjs/loader:1254:14)[39m
+[90m    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)[39m
+[90m    at Module.load (node:internal/modules/cjs/loader:1117:32)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:958:12)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)[39m
+[90m    at node:internal/main/run_main_module:23:47[39m
+
+Node.js v18.16.0
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004l[
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m
+]
+Game start. Player 1 goes first.
+/home/inodlz/repos/tic-tac-toe/script.js:27
+        console.log(`Switched to ${p2.name}'s turn.`)
+                                      ^
+
+TypeError: Cannot read properties of undefined (reading 'name')
+    at Object.switchPlayer [90m(/home/inodlz/repos/tic-tac-toe/[39mscript.js:27:39[90m)[39m
+    at Object.<anonymous> [90m(/home/inodlz/repos/tic-tac-toe/[39mscript.js:34:16[90m)[39m
+[90m    at Module._compile (node:internal/modules/cjs/loader:1254:14)[39m
+[90m    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)[39m
+[90m    at Module.load (node:internal/modules/cjs/loader:1117:32)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:958:12)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)[39m
+[90m    at node:internal/main/run_main_module:23:47[39m
+
+Node.js v18.16.0
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004l[
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m
+]
+/home/inodlz/repos/tic-tac-toe/script.js:23
+        console.log(`Game start. ${p1.name} goes first.`);
+                                      ^
+
+TypeError: Cannot read properties of undefined (reading 'name')
+    at Object.startGame [90m(/home/inodlz/repos/tic-tac-toe/[39mscript.js:23:39[90m)[39m
+    at Object.<anonymous> [90m(/home/inodlz/repos/tic-tac-toe/[39mscript.js:33:16[90m)[39m
+[90m    at Module._compile (node:internal/modules/cjs/loader:1254:14)[39m
+[90m    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)[39m
+[90m    at Module.load (node:internal/modules/cjs/loader:1117:32)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:958:12)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)[39m
+[90m    at node:internal/main/run_main_module:23:47[39m
+
+Node.js v18.16.0
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004l[
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m
+]
+Game start. Player 1 goes first.
+Switched to Player 2's turn.
+[1mnull[22m
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ ^C[?2004l[?2004h[?2004l
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004l[
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m
+]
+Game start. Player 1 goes first.
+Switched to Player 2's turn.
+[1mnull[22m
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004l[
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m
+]
+Game start. Player 1 goes first.
+currentPlayer after startGame: { name: [32m'Player 1'[39m, symbol: [32m'X'[39m }
+Switched to Player 2's turn.
+currentPlayer after switchPlayer: { name: [32m'Player 2'[39m, symbol: [32m'O'[39m }
+[1mnull[22m
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004l[
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m
+]
+Game start. Player 1 goes first.
+Switched to Player 2's turn.
+[1mnull[22m
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ ^C[?2004l[?2004h[?2004l
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js[6Pgit pushnode script.js
+[?2004l[
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m
+]
+Game start. Player 1 goes first.
+Switched to Player 2's turn.
+[1mnull[22m
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004l[
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m
+]
+Game start. Player 1 goes first.
+Switched to Player 2's turn.
+[90mundefined[39m
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004l[
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m
+]
+Game start. Player 1 goes first.
+Switched to Player 2's turn.
+Switched to Player 2's turn.
+/home/inodlz/repos/tic-tac-toe/script.js:34
+console.log(gameController.switchPlayer().currentPlayer);
+                                         ^
+
+TypeError: Cannot read properties of undefined (reading 'currentPlayer')
+    at Object.<anonymous> [90m(/home/inodlz/repos/tic-tac-toe/[39mscript.js:34:42[90m)[39m
+[90m    at Module._compile (node:internal/modules/cjs/loader:1254:14)[39m
+[90m    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)[39m
+[90m    at Module.load (node:internal/modules/cjs/loader:1117:32)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:958:12)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)[39m
+[90m    at node:internal/main/run_main_module:23:47[39m
+
+Node.js v18.16.0
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004l[
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m
+]
+Game start. Player 1 goes first.
+Switched to Player 2's turn.
+[90mundefined[39m
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004l[
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m
+]
+Game start. Player 1 goes first.
+Switched to Player 2's turn.
+[1mnull[22m
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004l[
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m
+]
+Game start. Player 1 goes first.
+Switched to Player 2's turn.
+Switched to Player 2's turn.
+{ name: [32m'Player 1'[39m, symbol: [32m'X'[39m }
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ ^C[?2004l[?2004h[?2004l
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004l[
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m
+]
+Game start. Player 1 goes first.
+Switched to Player 2's turn.
+Switched to Player 2's turn.
+{ name: [32m'Player 1'[39m, symbol: [32m'X'[39m }
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004l[
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m
+]
+Game start. Player 1 goes first.
+Switched to Player 2's turn.
+Switched to Player 2's turn.
+{ name: [32m'Player 1'[39m, symbol: [32m'X'[39m }
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004l[
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m,
+  [32m'X'[39m, [32m'X'[39m, [32m'X'[39m
+]
+Game start. Player 1 goes first.
+Switched to Player 2's turn.
+/home/inodlz/repos/tic-tac-toe/script.js:26
+        consol
