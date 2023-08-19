@@ -477,4 +477,479 @@ Player 1 marking his square...
   [1mnull[22m, [1mnull[22m, [1mnull[22m,
   [1mnull[22m, [1mnull[22m, [1mnull[22m
 ]
-[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [H[2J]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004lGame start. Player 1 goes first.
+Player 1 marking his square...
+[
+  [1mnull[22m, [1mnull[22m, [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 2's turn.
+Player 2 marking his square...
+[
+  [32m'O'[39m,  [1mnull[22m, [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 1's turn.
+Player 1 marking his square...
+Square already marked! Choose anotehr bub
+[
+  [32m'O'[39m,  [1mnull[22m, [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Player 1 marking his square...
+[
+  [32m'O'[39m,  [32m'X'[39m,  [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004lGame start. Player 1 goes first.
+Player 1 marking his square...
+[
+  [1mnull[22m, [1mnull[22m, [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 2's turn.
+Player 2 marking his square...
+[
+  [32m'O'[39m,  [1mnull[22m, [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 1's turn.
+Player 1 marking his square...
+Square already marked! Choose another cell bub
+[
+  [32m'O'[39m,  [1mnull[22m, [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Player 1 marking his square...
+[
+  [32m'O'[39m,  [32m'X'[39m,  [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Resetting game....
+....
+[
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004lGame start. Player 1 goes first.
+Player 1 marking his square...
+[
+  [1mnull[22m, [1mnull[22m, [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 2's turn.
+Player 2 marking his square...
+[
+  [32m'O'[39m,  [1mnull[22m, [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 1's turn.
+Player 1 marking his square...
+Square already marked! Choose another cell bub
+[
+  [32m'O'[39m,  [1mnull[22m, [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Player 1 marking his square...
+[
+  [32m'O'[39m,  [32m'X'[39m,  [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Resetting game....
+....taking longer than expected....
+[
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004lGame start. Player 1 goes first.
+Player 1 marking his square...
+[
+  [1mnull[22m, [1mnull[22m, [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 2's turn.
+Player 2 marking his square...
+[
+  [32m'O'[39m,  [1mnull[22m, [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 1's turn.
+Player 1 marking his square...
+Square already marked! Choose another cell bub
+[
+  [32m'O'[39m,  [1mnull[22m, [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Player 1 marking his square...
+[
+  [32m'O'[39m,  [32m'X'[39m,  [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Resetting game..................
+....taking longer than expected....
+[
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004lGame start. Player 1 goes first.
+Player 1 marking his square...
+[
+  [1mnull[22m, [1mnull[22m, [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 2's turn.
+Player 2 marking his square...
+[
+  [32m'O'[39m,  [1mnull[22m, [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 1's turn.
+Player 1 marking his square...
+Square already marked! Choose another cell bub
+[
+  [32m'O'[39m,  [1mnull[22m, [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Player 1 marking his square...
+[
+  [32m'O'[39m,  [32m'X'[39m,  [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Resetting game......................
+....taking longer than expected....
+[
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004lGame start. Player 1 goes first.
+Player 1 marking his square...
+[
+  [1mnull[22m, [1mnull[22m, [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 2's turn.
+Player 2 marking his square...
+[
+  [32m'O'[39m,  [1mnull[22m, [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 1's turn.
+Player 1 marking his square...
+Square already marked! Choose another cell bub
+[
+  [32m'O'[39m,  [1mnull[22m, [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Player 1 marking his square...
+[
+  [32m'O'[39m,  [32m'X'[39m,  [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Resetting game.....................
+....taking longer than expected....
+[
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [H[2J]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js[6Pgit pushcommit -m "Finish prototype function for removing cards"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd .[Kcommit -m "Add logic for toggling read button"[H[2J]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ git commit -m "Add logic for toggling read button"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd .[Kcommit -m "Finish prototype function for removing cards"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpush[Knode script.js[Knode script.js
+[?2004lGame start. Player 1 goes first.
+Player 1 marking his square...
+[
+  [1mnull[22m, [1mnull[22m, [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 2's turn.
+Player 2 marking his square...
+[
+  [32m'O'[39m,  [1mnull[22m, [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 1's turn.
+Player 1 marking his square...
+Square already marked! Choose another cell bub
+[
+  [32m'O'[39m,  [1mnull[22m, [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Player 1 marking his square...
+[
+  [32m'O'[39m,  [32m'X'[39m,  [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Resetting game.....................
+....taking longer than expected....
+[
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004lGame start. Player 1 goes first.
+Player 1 marking his square...
+Player 1 wins!!!
+[
+  [1mnull[22m, [1mnull[22m, [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 2's turn.
+Player 2 marking his square...
+Player 2 wins!!!
+[
+  [32m'O'[39m,  [1mnull[22m, [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 1's turn.
+Player 1 marking his square...
+Square already marked! Choose another cell bub
+Player 1 wins!!!
+[
+  [32m'O'[39m,  [1mnull[22m, [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Player 1 marking his square...
+Player 1 wins!!!
+[
+  [32m'O'[39m,  [32m'X'[39m,  [32m'X'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Resetting game.....................
+....taking longer than expected....
+[
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [H[2J]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004lGame start. Player 1 goes first.
+Player 1 marking his square...
+Player 1 wins!!!
+[
+  [32m'X'[39m,  [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 2's turn.
+Player 2 marking his square...
+Player 2 wins!!!
+[
+  [32m'X'[39m,  [1mnull[22m, [1mnull[22m,
+  [32m'O'[39m,  [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 1's turn.
+Player 1 marking his square...
+Player 1 wins!!!
+[
+  [32m'X'[39m,  [32m'X'[39m,  [1mnull[22m,
+  [32m'O'[39m,  [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 2's turn.
+Player 2 marking his square...
+Player 2 wins!!!
+[
+  [32m'X'[39m,  [32m'X'[39m,  [1mnull[22m,
+  [32m'O'[39m,  [32m'O'[39m,  [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 1's turn.
+Player 1 marking his square...
+Player 1 wins!!!
+[
+  [32m'X'[39m,  [32m'X'[39m,  [32m'X'[39m,
+  [32m'O'[39m,  [32m'O'[39m,  [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js[H[2J]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004lGame start. Player 1 goes first.
+Player 1 marking his square...
+[
+  [32m'X'[39m,  [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 2's turn.
+Player 2 marking his square...
+[
+  [32m'X'[39m,  [1mnull[22m, [1mnull[22m,
+  [32m'O'[39m,  [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 1's turn.
+Player 1 marking his square...
+[
+  [32m'X'[39m,  [32m'X'[39m,  [1mnull[22m,
+  [32m'O'[39m,  [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 2's turn.
+Player 2 marking his square...
+[
+  [32m'X'[39m,  [32m'X'[39m,  [1mnull[22m,
+  [32m'O'[39m,  [32m'O'[39m,  [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 1's turn.
+Player 1 marking his square...
+Player 1 wins!!!
+[
+  [32m'X'[39m,  [32m'X'[39m,  [32m'X'[39m,
+  [32m'O'[39m,  [32m'O'[39m,  [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [H[2J]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004lGame start. Player 1 goes first.
+Player 1 marking his square...
+[
+  [32m'X'[39m,  [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 2's turn.
+Player 2 marking his square...
+[
+  [32m'X'[39m,  [1mnull[22m, [1mnull[22m,
+  [32m'O'[39m,  [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 1's turn.
+Player 1 marking his square...
+[
+  [32m'X'[39m,  [32m'X'[39m,  [1mnull[22m,
+  [32m'O'[39m,  [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 2's turn.
+Player 2 marking his square...
+[
+  [32m'X'[39m,  [32m'X'[39m,  [1mnull[22m,
+  [32m'O'[39m,  [32m'O'[39m,  [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 1's turn.
+Player 1 marking his square...
+[
+  [32m'X'[39m,  [32m'X'[39m,  [32m'X'[39m,
+  [32m'O'[39m,  [32m'O'[39m,  [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Player 1 wins!!!
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004lGame start. Player 1 goes first.
+Player 1 marking his square...
+[
+  [32m'X'[39m,  [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 2's turn.
+Player 2 marking his square...
+[
+  [32m'X'[39m,  [1mnull[22m, [1mnull[22m,
+  [32m'O'[39m,  [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 1's turn.
+Player 1 marking his square...
+[
+  [32m'X'[39m,  [1mnull[22m, [1mnull[22m,
+  [32m'O'[39m,  [32m'X'[39m,  [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 2's turn.
+Player 2 marking his square...
+[
+  [32m'X'[39m,  [1mnull[22m, [1mnull[22m,
+  [32m'O'[39m,  [32m'X'[39m,  [32m'O'[39m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 1's turn.
+Player 1 marking his square...
+[
+  [32m'X'[39m,  [1mnull[22m, [1mnull[22m,
+  [32m'O'[39m,  [32m'X'[39m,  [32m'O'[39m,
+  [1mnull[22m, [1mnull[22m, [32m'X'[39m
+]
+Player 1 wins!!!
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ node script.js
+[?2004lGame start. Player 1 goes first.
+Player 1 marking his square...
+[
+  [32m'X'[39m,  [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 2's turn.
+Player 2 marking his square...
+[
+  [32m'X'[39m,  [1mnull[22m, [1mnull[22m,
+  [32m'O'[39m,  [1mnull[22m, [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 1's turn.
+Player 1 marking his square...
+[
+  [32m'X'[39m,  [1mnull[22m, [1mnull[22m,
+  [32m'O'[39m,  [32m'X'[39m,  [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 2's turn.
+Player 2 marking his square...
+Square already marked! Choose another cell bub
+[
+  [32m'X'[39m,  [1mnull[22m, [1mnull[22m,
+  [32m'O'[39m,  [32m'X'[39m,  [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [1mnull[22m
+]
+Switched to Player 1's turn.
+Player 1 marking his square...
+[
+  [32m'X'[39m,  [1mnull[22m, [1mnull[22m,
+  [32m'O'[39m,  [32m'X'[39m,  [1mnull[22m,
+  [1mnull[22m, [1mnull[22m, [32m'X'[39m
+]
+Player 1 wins!!!
+[?2004h]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-tac-toe[00m$ [K]0;inodlz@Xubuntu: ~/repos/tic-tac-toe[01;32minodlz@Xubuntu[00m:[01;34m~/repos/tic-t
