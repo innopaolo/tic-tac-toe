@@ -1,14 +1,15 @@
 // Factory function for players
-const createPlayer = (name, symbol) => {
-    return { name, symbol };
+const createPlayer = (name, symbol, points) => {
+    return { name, symbol, points };
 };
 
-const player1 = createPlayer("Player 1", "X");
-const player2 = createPlayer("Player 2", "O");
+const player1 = createPlayer("Player 1", "X", 0);
+const player2 = createPlayer("Player 2", "O", 0);
 
 
-// Module Pattern for gameboard
-const gameboard = (() => {
+
+// Module Pattern for gameBoard
+const gameBoard = (() => {
     const _cells = [null, null, null, null, null, null, null, null, null];
 
     const winningCombinations = [
@@ -20,7 +21,7 @@ const gameboard = (() => {
     const showCells = () => {
         console.log(_cells);
     };
-    const _checkForUltimateVictory = (symbol) => {
+    const _checkWinner = (symbol) => {
         return winningCombinations.some(combination => {
             return combination.every(index => _cells[index] === symbol);
         });
@@ -33,10 +34,15 @@ const gameboard = (() => {
         }
 
         // Set win condition
-        if (_checkForUltimateVictory(player.symbol)) {
-            setTimeout(() => {
-                console.log(`${player.name} wins!!!`); // Places message after last cell grid
-            }, 1000);
+        if (_checkWinner(player.symbol)) {
+            player.points++;
+            console.log(`${player.name} wins this round!`);
+            console.log(`${player.name} won ${player.points} times.`);
+        }
+
+        // First to three points wins the game
+        if (player.points === 3) {
+            console.log(`${player.name} won ${player.points} times. Ultimate Victory!`);
         }
     };
     const reset = () => {
@@ -51,6 +57,8 @@ const gameboard = (() => {
     return { showCells, setCells, reset };
 })();
 
+
+
 // Module pattern for gameController
 const gameController = ((p1, p2) => {
     let _currentPlayer = null;
@@ -61,7 +69,7 @@ const gameController = ((p1, p2) => {
     };
     const setPlayerMove = (index) => {
         console.log(`${_currentPlayer.name} marking his square...`)
-        gameboard.setCells(index, _currentPlayer);
+        gameBoard.setCells(index, _currentPlayer);
     };
     const switchPlayer = () => {
         _currentPlayer = (_currentPlayer == p1) ? p2 : p1;
@@ -74,20 +82,62 @@ const gameController = ((p1, p2) => {
 
 gameController.startGame();
 gameController.setPlayerMove(0);
-gameboard.showCells();
+gameBoard.showCells();
 gameController.switchPlayer();
 gameController.setPlayerMove(2);
-gameboard.showCells();
+gameBoard.showCells();
 gameController.switchPlayer();
 gameController.setPlayerMove(1);
-gameboard.showCells();
+gameBoard.showCells();
 gameController.switchPlayer();
 gameController.setPlayerMove(4);
-gameboard.showCells();
+gameBoard.showCells();
 gameController.switchPlayer();
 gameController.setPlayerMove(7);
-gameboard.showCells();
+gameBoard.showCells();
 gameController.switchPlayer();
 gameController.setPlayerMove(6);
-gameboard.showCells();
+gameBoard.showCells();
+
+gameBoard.reset();
+
+gameController.startGame();
+gameController.setPlayerMove(0);
+gameBoard.showCells();
+gameController.switchPlayer();
+gameController.setPlayerMove(2);
+gameBoard.showCells();
+gameController.switchPlayer();
+gameController.setPlayerMove(1);
+gameBoard.showCells();
+gameController.switchPlayer();
+gameController.setPlayerMove(4);
+gameBoard.showCells();
+gameController.switchPlayer();
+gameController.setPlayerMove(7);
+gameBoard.showCells();
+gameController.switchPlayer();
+gameController.setPlayerMove(6);
+gameBoard.showCells();
+
+gameBoard.reset();
+
+gameController.startGame();
+gameController.setPlayerMove(0);
+gameBoard.showCells();
+gameController.switchPlayer();
+gameController.setPlayerMove(2);
+gameBoard.showCells();
+gameController.switchPlayer();
+gameController.setPlayerMove(1);
+gameBoard.showCells();
+gameController.switchPlayer();
+gameController.setPlayerMove(4);
+gameBoard.showCells();
+gameController.switchPlayer();
+gameController.setPlayerMove(7);
+gameBoard.showCells();
+gameController.switchPlayer();
+gameController.setPlayerMove(6);
+gameBoard.showCells();
 
