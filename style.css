@@ -1,4 +1,91 @@
 * {
     margin: 0;
     padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ff4c4c;
+    font-family: "Snacker Comic W01 Black", sans-serif;
+    color: #ffce20;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main h1 {
+    font-size: 6rem;
+    line-height: 4rem;
+    letter-spacing: 1rem;
+}
+
+main h1:hover {
+    text-shadow: 4px 4px 5px black;
+    transform: scale(1.1);
+    cursor: alias;
+}
+
+#player-buttons {
+    position: relative;
+    font-size: 5.1rem;
+    font-weight: 900;
+    color: white;
+    padding: 20px 0 30px;
+    display: flex;
+    gap: 200px;
+}
+
+.hidden-content {
+    display: none;
+}
+
+#player1,
+#player2 {
+    cursor: pointer;
+}
+
+#player1:hover + .hidden-content,
+#player2:hover + .hidden-content {
+    display: block;
+    font-size: 40px;
+    position: absolute;
+    bottom: 0;
+    color: #ffce20;
+    text-shadow: 4px 4px 5px black;
+}
+
+#player1:hover + .hidden-content {
+    left: 0;
+}
+
+#player2:hover + .hidden-content {
+    right: 0;
+}
+
+
+#start-game-btn {
+    margin-top: 15px;
+    font-size: 3rem;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 6px dotted #ffce20;
+    background-color: #ff4c4c;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+#start-game-btn:hover {
+    transform: scale(1.2);
+    background-color: #fe6f6f;
+    cursor: pointer;
 }
