@@ -26,6 +26,11 @@ const gameBoard = (() => {
             return combination.every(index => _cells[index] === symbol);
         });
     };
+    const _ultimateVictoryCondition = (player) => {
+        if (player.points === 3) {
+            console.log(`${player.name} has !!Ultimate Victory!!`);
+        }
+    }; 
     const setCells = (index, player) => {
         if (_cells[index] === null) {
             _cells[index] = player.symbol;
@@ -38,11 +43,7 @@ const gameBoard = (() => {
             player.points++;
             console.log(`${player.name} wins this round!`);
             console.log(`${player.name} won ${player.points} times.`);
-        }
-
-        // First to three points wins the game
-        if (player.points === 3) {
-            console.log(`${player.name} won ${player.points} times. Ultimate Victory!`);
+            _ultimateVictoryCondition(player);
         }
     };
     const reset = () => {
