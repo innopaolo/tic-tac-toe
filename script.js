@@ -18,9 +18,6 @@ const gameBoard = (() => {
         [0, 4, 8], [2, 4, 6]             // Diagonals
     ];
 
-    const showCells = () => {
-        console.log(_cells);
-    };
     const _checkWinner = (symbol) => {
         return winningCombinations.some(combination => {
             return combination.every(index => _cells[index] === symbol);
@@ -29,6 +26,13 @@ const gameBoard = (() => {
     const _ultimateVictoryCondition = (player) => {
         if (player.points === 3) {
             console.log(`${player.name} has !!Ultimate Victory!!`);
+        }
+    };
+    const _checkForTie = () => {
+        if (_cells.every(cell => cell !== null )) {
+            return true;
+        } else {
+            return false;
         }
     }; 
     const setCells = (index, player) => {
@@ -45,6 +49,12 @@ const gameBoard = (() => {
             console.log(`${player.name} won ${player.points} times.`);
             _ultimateVictoryCondition(player);
         }
+        if (_checkForTie()) {
+            console.log("It's a tie!");
+        }
+    };
+    const showCells = () => {
+        console.log(_cells);
     };
     const reset = () => {
         _cells.forEach((element, index, array) => {
@@ -139,6 +149,40 @@ gameController.switchPlayer();
 gameController.setPlayerMove(7);
 gameBoard.showCells();
 gameController.switchPlayer();
+gameController.setPlayerMove(3);
+gameBoard.showCells();
+gameController.switchPlayer();
 gameController.setPlayerMove(6);
 gameBoard.showCells();
+gameController.switchPlayer();
+gameController.setPlayerMove(8);
+gameBoard.showCells();
+gameController.switchPlayer();
+gameController.setPlayerMove(5);
+gameBoard.showCells();
+
+gameBoard.reset();
+
+gameController.startGame();
+gameController.setPlayerMove(0);
+gameBoard.showCells();
+gameController.switchPlayer();
+gameController.setPlayerMove(2);
+gameBoard.showCells();
+gameController.switchPlayer();
+gameController.setPlayerMove(1);
+gameBoard.showCells();
+gameController.switchPlayer();
+gameController.setPlayerMove(4);
+gameBoard.showCells();
+gameController.switchPlayer();
+gameController.setPlayerMove(7);
+gameBoard.showCells();
+gameController.switchPlayer();
+gameController.setPlayerMove(6);
+gameBoard.showCells();
+
+gameBoard.reset();
+
+
 
