@@ -9,6 +9,7 @@
 }
 
 body {
+    position: relative;
     background-color: #ff4c4c;
     font-family: "Snacker Comic W01 Black", sans-serif;
     color: #ffce20;
@@ -20,6 +21,7 @@ main {
     height: 100vh;
     justify-content: center;
     align-items: center;
+    border: 70px solid #fe6f6f;
 
 }
 
@@ -33,6 +35,21 @@ main h1:hover {
     text-shadow: 4px 4px 5px black;
     transform: scale(1.1);
     cursor: alias;
+}
+
+#laputa-robot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32vw;
+}
+
+#bunny-robot {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-left: 100px;
+    width: 25vw;
 }
 
 #player-buttons {
