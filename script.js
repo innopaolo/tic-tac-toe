@@ -11,21 +11,32 @@ let player2 = createPlayer("Player 2", "O", 0);
 const numberOfWins = 3;
 const player1Element = document.querySelector("#player1");
 const player2Element = document.querySelector("#player2");
+const input1 = document.querySelector(".hidden-content input");
+const input2 = document.querySelector("#hidden-input2");
+const startGameBtn = document.querySelector("#start-game-btn");
 
 player1Element.addEventListener("click", () => {
-    const input = document.querySelector(".hidden-content input");
-    input.style.display = "block";
-    input.focus();
+    input1.style.display = "block";
+    input1.focus();
 });
 
 player2Element.addEventListener("click", () => {
-    const input = document.querySelector("#hidden-input2");
-    input.style.display = "block";
-    input.focus();
-    console.log(input);
+    input2.style.display = "block";
+    input2.focus();
 });
 
+startGameBtn.addEventListener("click", () => {
+    
+    // Grab if available user inputted name 
+    if (input1.value !== "") {
+        player1.name = input1.value;
+    }
+    if (input2.value !== "") {
+        player2.name = input2.value;
+    }
 
+    
+});
 
 
 // Module Pattern for gameBoard
