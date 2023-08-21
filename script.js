@@ -35,7 +35,21 @@ startGameBtn.addEventListener("click", () => {
         player2.name = input2.value;
     }
 
-    
+    // Move images and start screen out of the way
+    const laputaRobot = document.querySelector("#laputa-robot");
+    const flowerSkate = document.querySelector("#flower-skate");
+    const main = document.querySelector("main");
+
+    laputaRobot.classList.add("move-left");
+    flowerSkate.classList.add("move-right");
+    // Add classList to each child of the main element
+    const childElements = main.children;
+    for (const child of childElements) {
+        child.classList.add("move-down");
+    }
+    // Ensures start button to animate at the same time as other elements
+    startGameBtn.classList.add("disable-hover"); 
+
 });
 
 

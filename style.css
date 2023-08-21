@@ -13,6 +13,7 @@ body {
     background-color: #ff4c4c;
     font-family: "Snacker Comic W01 Black", sans-serif;
     color: #ffce20;
+    overflow: hidden;
 }
 
 main {
@@ -40,7 +41,7 @@ main h1 {
     width: 32vw;
 }
 
-#bunny-robot {
+#flower-skate {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -115,4 +116,30 @@ main h1 {
     transform: scale(1.2);
     background-color: #fe6f6f;
     cursor: pointer;
+}
+
+
+/* Animations for start game button */
+#laputa-robot,
+#flower-skate,
+main h1,
+main > div,
+main button {
+    transition: transform 2s ease-in-out;
+}
+
+.disable-hover {
+   pointer-events: none;  /* Apply to start button to start animation same time as other elements */
+}
+
+.move-left {
+    transform: translateX(-100%);
+}
+
+.move-right {
+    transform: translateX(100%);
+}
+
+.move-down {
+    transform: translateY(1000%);
 }
