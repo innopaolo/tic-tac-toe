@@ -178,17 +178,19 @@ main button {
 
 #player-info {
     display: flex;
-    gap: 100px;
+    gap: 80px;
     margin-bottom: 20px;
     justify-content: center;
 }
 
 .player-box {
-    font-size: 0.3em;
+    font-size: 0.35em;
     background-color: #ff4c4c;
     border-radius: 10px;
     padding: 10px;
     box-shadow: 2px 2px 6px black;
+    max-width: 110px;
+    word-wrap: break-word;
 }
 
 #tic-tac-toe-grid {
