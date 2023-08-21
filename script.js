@@ -35,7 +35,7 @@ startGameBtn.addEventListener("click", () => {
         player2.name = input2.value;
     }
 
-    // Move images and start screen out of the way
+    // Animate images and start screen out of the way
     const laputaRobot = document.querySelector("#laputa-robot");
     const flowerSkate = document.querySelector("#flower-skate");
     const main = document.querySelector("main");
@@ -50,6 +50,15 @@ startGameBtn.addEventListener("click", () => {
     // Ensures start button to animate at the same time as other elements
     startGameBtn.classList.add("disable-hover"); 
 
+
+    // Animate new images and grid to move to visible area
+    const kidSpace = document.querySelector("#kid-space");
+    const potatoAstronaut = document.querySelector("#potato-astronaut");
+    const hiddenPlayArea = document.querySelector("#hidden-play-area");
+
+    kidSpace.classList.add("move-bottom");
+    potatoAstronaut.classList.add("move-top");
+    hiddenPlayArea.classList.add("opacity-visible");
 });
 
 

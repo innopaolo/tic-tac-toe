@@ -135,11 +135,70 @@ main button {
 .move-left {
     transform: translateX(-100%);
 }
-
 .move-right {
     transform: translateX(100%);
 }
-
 .move-down {
     transform: translateY(1000%);
+}
+.move-bottom {
+    bottom: 0 !important;
+}
+.move-top {
+    top: 0 !important;
+}
+.opacity-visible {
+    opacity: 1 !important;
+}
+
+
+
+/* Gameplay content becomes visible after animation */
+#hidden-play-area {
+    width: 500px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    opacity: 0;
+    transition: opacity 2s ease-in;
+    /* display: none; */
+}
+
+#player-area-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#player-info {
+    display: flex;
+}
+
+#tic-tac-toe-grid {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#kid-space {
+    position: absolute;
+    bottom: -100%;
+    left: 5px;
+    width: 35vw;
+    transition: bottom 2s ease-in-out;
+}
+
+#potato-astronaut {
+    position: absolute;
+    top: -100%;
+    right: 0;
+    width: 35vw;
+    transition: top 2s ease-in-out;
 }

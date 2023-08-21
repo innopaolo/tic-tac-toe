@@ -8,9 +8,9 @@
     <link href="https://db.onlinewebfonts.com/c/0b7ab4a4004af507f653acd3273d0dbd?family=Snacker+Comic+W01+Black" rel="stylesheet">
 </head>
 <body>
-    <aside>
+    <div>
         <img id="laputa-robot" src="laputa-robot.png" alt="laputa robot from ig:miguelgarest">
-    </aside>
+    </div>
     <main>
         <h1>TIC</h1>
         <h1>TAC</h1>
@@ -23,9 +23,32 @@
         </div>
         <button id="start-game-btn">start!</button>
     </main>
-    <aside>
+    <div>
         <img id="flower-skate" src="flower-skate.png" alt="skating flower from ig:miguelgarest">
-    </aside>
+    </div>
+
+    <!-- Hidden divs will slide into place when start button clicked -->
+    <div><img id="kid-space" src="kid-space.png" alt="space kid from ig:miguelgarest"></div>
+    <div id="hidden-play-area">
+        <div id="play-area-container">
+            <div id="player-info">
+                <div>hello</div>
+                <div>hello</div>
+            </div>
+            <div id="tic-tac-toe-grid">
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+                <div class="grid-item">7</div>
+                <div class="grid-item">8</div>
+                <div class="grid-item">9</div>
+            </div>
+        </div>
+    </div>
+    <div><img id="potato-astronaut" src="potato-astronaut.png" alt="potato-astronaut from ig:miguelgarest"></div>
 
     <script src="script.js"></script>
 </body>
