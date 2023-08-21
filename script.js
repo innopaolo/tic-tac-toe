@@ -1,6 +1,17 @@
 // Factory function for players and initialize two players
 const createPlayer = (name, symbol, points) => {
-    return { name, symbol, points };
+    const updateInfo = function(container) {
+        container.textContent = this.name;
+
+        const hrElement = document.createElement("hr");
+        const pElement = document.createElement("p");
+
+        pElement.textContent = this.points
+
+        container.appendChild(hrElement);
+        container.appendChild(pElement);
+    };
+    return { name, symbol, points, updateInfo };
 };
 
 let player1 = createPlayer("Player 1", "X", 0);
@@ -14,6 +25,8 @@ const player2Element = document.querySelector("#player2");
 const input1 = document.querySelector(".hidden-content input");
 const input2 = document.querySelector("#hidden-input2");
 const startGameBtn = document.querySelector("#start-game-btn");
+const pb1 = document.querySelector(".pb1"); // Player info box 1
+const pb2 = document.querySelector(".pb2"); // Player info box 2
 
 player1Element.addEventListener("click", () => {
     input1.style.display = "block";
@@ -61,12 +74,10 @@ startGameBtn.addEventListener("click", () => {
     hiddenPlayArea.classList.add("opacity-visible");
 
 
-    // Set player name in the player info box
-    const pb1 = document.querySelector(".pb1");
-    const pb2 = document.querySelector(".pb2");
+    // Set player name and points in the player info box
+    player1.updateInfo(pb1);
+    player2.updateInfo(pb2);
 
-    pb1.textContent = player1.name;
-    pb2.textContent = player2.name;
 });
 
 
