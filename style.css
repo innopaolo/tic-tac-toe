@@ -183,9 +183,9 @@ main button {
 }
 
 .player-box {
-    font-size: 1em;
+    font-size: 0.4em;
     background-color: #be2e2e;
-    border-radius: 30px;
+    border-radius: 10px;
     padding: 10px;
 }
 
@@ -196,6 +196,7 @@ main button {
     gap: 0.3rem;
     justify-content: center;
     align-items: center;
+    font-size: 1em;
 }
 
 .grid-item {

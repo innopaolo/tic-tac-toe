@@ -59,6 +59,14 @@ startGameBtn.addEventListener("click", () => {
     kidSpace.classList.add("move-bottom");
     potatoAstronaut.classList.add("move-top");
     hiddenPlayArea.classList.add("opacity-visible");
+
+
+    // Set player name in the player info box
+    const pb1 = document.querySelector(".pb1");
+    const pb2 = document.querySelector(".pb2");
+
+    pb1.textContent = player1.name;
+    pb2.textContent = player2.name;
 });
 
 
