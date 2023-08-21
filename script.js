@@ -27,6 +27,7 @@ const input2 = document.querySelector("#hidden-input2");
 const startGameBtn = document.querySelector("#start-game-btn");
 const pb1 = document.querySelector(".pb1"); // Player info box 1
 const pb2 = document.querySelector(".pb2"); // Player info box 2
+const ticTacToe = document.querySelector("#tic-tac-toe-grid");
 
 player1Element.addEventListener("click", () => {
     input1.style.display = "block";
@@ -79,6 +80,14 @@ startGameBtn.addEventListener("click", () => {
     player2.updateInfo(pb2);
 
     gameController.startGame();
+});
+
+ticTacToe.addEventListener("click", (e) => {
+    const clickedItem = e.target.closest(".grid-item");
+    if (clickedItem) {
+        const dataIndex = clickedItem.dataset.index;
+        console.log(`Clicked cell with index: ${dataIndex}`);
+    }
 });
 
 
