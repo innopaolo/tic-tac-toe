@@ -78,6 +78,7 @@ startGameBtn.addEventListener("click", () => {
     player1.updateInfo(pb1);
     player2.updateInfo(pb2);
 
+    gameController.startGame();
 });
 
 
@@ -155,6 +156,7 @@ const gameController = ((p1, p2) => {
 
     const startGame = () => {
         _currentPlayer = p1;
+        pb1.style.boxShadow = "0 0 50px #FFC34C";
         console.log(`Game start. ${p1.name} goes first.`);
     };
 
