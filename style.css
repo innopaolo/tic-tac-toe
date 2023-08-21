@@ -23,7 +23,6 @@ main {
     justify-content: center;
     align-items: center;
     border: 70px solid #fe6f6f;
-
 }
 
 main h1 {
@@ -149,14 +148,13 @@ main button {
 }
 .opacity-visible {
     opacity: 1 !important;
+    pointer-events: auto !important;
 }
 
 
 
 /* Gameplay content becomes visible after animation */
 #hidden-play-area {
-    width: 500px;
-    background-color: antiquewhite;
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -168,8 +166,9 @@ main button {
     font-size: 4rem;
     opacity: 0;
     transition: opacity 2s ease-in;
-    /* display: none; */
-}
+    /* Ensures the start screen hover and click are not blocked */
+    pointer-events: none; 
+} 
 
 #player-area-container {
     display: flex;
@@ -179,12 +178,30 @@ main button {
 
 #player-info {
     display: flex;
+    gap: 100px;
+    margin-bottom: 20px;
+}
+
+.player-box {
+    font-size: 1em;
+    background-color: #be2e2e;
+    border-radius: 30px;
+    padding: 10px;
 }
 
 #tic-tac-toe-grid {
     display: grid;
     text-align: center;
     grid-template-columns: repeat(3, 1fr);
+    gap: 0.3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item {
+    background-color: #be2e2e;
+    padding: 0.8rem 0.3rem;
+    border-radius: 20px;
 }
 
 #kid-space {
