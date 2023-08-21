@@ -86,7 +86,15 @@ ticTacToe.addEventListener("click", (e) => {
     const clickedItem = e.target.closest(".grid-item");
     if (clickedItem) {
         const dataIndex = clickedItem.dataset.index;
-        console.log(`Clicked cell with index: ${dataIndex}`);
+        const currentPlayer = gameController.getCurrentPlayer();
+
+        if (clickedItem.textContent == "") {
+            
+            // This will update the _cells array
+            gameController.setPlayerMove(dataIndex);
+            // And this will mark the clicked grid-item
+            clickedItem.textContent = currentPlayer.symbol; 
+        }
     }
 });
 
@@ -125,8 +133,6 @@ const gameBoard = (() => {
     const setCells = (index, player) => {
         if (_cells[index] === null) {
             _cells[index] = player.symbol;
-        } else {
-            console.log("Square already marked! Choose another cell bub");
         }
 
         // Set win condition
@@ -169,7 +175,6 @@ const gameController = ((p1, p2) => {
     };
 
     const setPlayerMove = (index) => {
-        console.log(`${_currentPlayer.name} marking his square...`)
         gameBoard.setCells(index, _currentPlayer);
     };
 
