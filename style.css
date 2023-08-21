@@ -237,6 +237,7 @@ main button {
 /* Player info box style */
 hr {
     margin: 10px 0;
+    padding-top: auto;
     border: 2px solid white;
 }
 
