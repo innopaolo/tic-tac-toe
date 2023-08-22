@@ -1,6 +1,6 @@
 // Factory function for players and initialize two players
-const createPlayer = (name, symbol, points) => {
-    const updateInfo = function(container) {
+const createPlayer = (name, symbol, points, container) => {
+    const updateInfo = function() {
         container.textContent = this.name;
 
         const hrElement = document.createElement("hr");
@@ -14,8 +14,11 @@ const createPlayer = (name, symbol, points) => {
     return { name, symbol, points, updateInfo };
 };
 
-let player1 = createPlayer("Player 1", "X", 0);
-let player2 = createPlayer("Player 2", "O", 0);
+const pb1 = document.querySelector(".pb1"); // Player info box 1 AKA container
+const pb2 = document.querySelector(".pb2"); // Player info box 2 AKA container
+
+let player1 = createPlayer("Player 1", "X", 0, pb1);
+let player2 = createPlayer("Player 2", "O", 0, pb2);
 
 
 // Global variables and DOM manipulation
@@ -25,8 +28,6 @@ const player2Element = document.querySelector("#player2");
 const input1 = document.querySelector(".hidden-content input");
 const input2 = document.querySelector("#hidden-input2");
 const startGameBtn = document.querySelector("#start-game-btn");
-const pb1 = document.querySelector(".pb1"); // Player info box 1
-const pb2 = document.querySelector(".pb2"); // Player info box 2
 const ticTacToe = document.querySelector("#tic-tac-toe-grid");
 
 player1Element.addEventListener("click", () => {
@@ -76,8 +77,8 @@ startGameBtn.addEventListener("click", () => {
 
 
     // Set player name and points in the player info box
-    player1.updateInfo(pb1);
-    player2.updateInfo(pb2);
+    player1.updateInfo();
+    player2.updateInfo();
 
     gameController.startGame();
 });
@@ -142,6 +143,7 @@ const gameBoard = (() => {
             player.points++;
             console.log(`${player.name} wins this round!`);
             console.log(`${player.name} won ${player.points} times.`);
+            player.updateInfo();
             _ultimateVictoryCondition(player);
         }
         if (_checkForTie()) {
@@ -182,7 +184,6 @@ const gameController = ((p1, p2) => {
 
     const switchPlayer = () => {
         _currentPlayer = (_currentPlayer == p1) ? p2 : p1;
-        console.log(`Switched to ${_currentPlayer.name}'s turn.`)
 
         // Switch the player info box glow effect depending on current player
         if (_currentPlayer === p2) {
