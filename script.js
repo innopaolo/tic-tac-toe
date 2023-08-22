@@ -94,6 +94,8 @@ ticTacToe.addEventListener("click", (e) => {
             gameController.setPlayerMove(dataIndex);
             // And this will mark the clicked grid-item
             clickedItem.textContent = currentPlayer.symbol; 
+
+            gameController.switchPlayer();
         }
     }
 });
@@ -171,7 +173,7 @@ const gameController = ((p1, p2) => {
 
     const startGame = () => {
         _currentPlayer = p1;
-        setTimeout( () => { pb1.style.boxShadow = "0 0 50px #FFC34C"; }, 3000);
+        setTimeout( () => { pb1.style.boxShadow = "0 0 50px #FFC34C"; }, 1000);
     };
 
     const setPlayerMove = (index) => {
@@ -181,6 +183,15 @@ const gameController = ((p1, p2) => {
     const switchPlayer = () => {
         _currentPlayer = (_currentPlayer == p1) ? p2 : p1;
         console.log(`Switched to ${_currentPlayer.name}'s turn.`)
+
+        // Switch the player info box glow effect depending on current player
+        if (_currentPlayer === p2) {
+            pb2.style.boxShadow = "0 0 50px #FFC34C";
+            pb1.style.boxShadow = "none";
+        } else {
+            pb1.style.boxShadow = "0 0 50px #FFC34C";
+            pb2.style.boxShadow = "none"
+        }
     };
 
     const getCurrentPlayer = () => _currentPlayer;
