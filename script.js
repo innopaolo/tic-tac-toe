@@ -29,6 +29,7 @@ const input1 = document.querySelector(".hidden-content input");
 const input2 = document.querySelector("#hidden-input2");
 const startGameBtn = document.querySelector("#start-game-btn");
 const ticTacToe = document.querySelector("#tic-tac-toe-grid");
+const returnToStartScreen = document.querySelector("#return-btn");
 
 player1Element.addEventListener("click", () => {
     input1.style.display = "block";
@@ -49,6 +50,8 @@ startGameBtn.addEventListener("click", () => {
     if (input2.value !== "") {
         player2.name = input2.value;
     }
+
+    returnToStartScreen.classList.add("opacity-visible");
 
     // Animate images and start screen out of the way
     const laputaRobot = document.querySelector("#laputa-robot");
@@ -100,6 +103,8 @@ ticTacToe.addEventListener("click", (e) => {
         }
     }
 });
+
+returnToStartScreen.addEventListener( "click", () => location.reload() );
 
 
 // Module Pattern for gameBoard
