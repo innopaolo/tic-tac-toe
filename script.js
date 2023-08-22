@@ -60,6 +60,7 @@ startGameBtn.addEventListener("click", () => {
 
     laputaRobot.classList.add("move-left");
     flowerSkate.classList.add("move-right");
+    setTimeout(() => { flowerSkate.style.display = "none"; }, 1500);
     // Add classList to each child of the main element
     const childElements = main.children;
     for (const child of childElements) {
