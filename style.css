@@ -218,6 +218,28 @@ main button {
     background-color: #fe6f6f;
 }
 
+
+/* Grid animation for a tie  */
+.grid-item.tie {
+    animation-name: changeBGColor;
+    animation-duration: 4s;
+}
+@keyframes changeBGColor {
+    0% {background-color: #be2e2e;}
+    50% {background-color: #FFC34C;}
+    100% {background-color: #be2e2e;}
+}
+.grid-item.tie div {
+    animation-name: scaleSymbol;
+    animation-duration: 4s;
+}
+@keyframes scaleSymbol {
+    0% {scale: 1;}
+    50% {scale: 1.4;}
+    100% {scale: 1.6em;} 
+}
+
+
 #kid-space {
     position: absolute;
     bottom: -100%;

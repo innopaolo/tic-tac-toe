@@ -141,13 +141,20 @@ const gameBoard = (() => {
         // Set win condition
         if (_checkWinner(player.symbol)) {
             player.points++;
-            console.log(`${player.name} wins this round!`);
-            console.log(`${player.name} won ${player.points} times.`);
             player.updateInfo();
             _ultimateVictoryCondition(player);
         }
         if (_checkForTie()) {
-            console.log("It's a tie!");
+            document.querySelectorAll(".grid-item").forEach(item => {
+                setTimeout(() => {item.classList.add("tie");
+                item.innerHTML = `<div>${item.textContent}</div>`
+            }, 500);
+
+                setTimeout(() => {
+                    item.classList.remove("tie");
+                    item.innerHTML = item.textContent;
+                }, 4500);
+            });
         }
     };
 
