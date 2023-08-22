@@ -194,6 +194,7 @@ main button {
 }
 
 #tic-tac-toe-grid {
+    position: relative;
     display: grid;
     text-align: center;
     grid-template-columns: repeat(3, 1fr);
@@ -240,6 +241,14 @@ main button {
 }
 
 
+.resultMessage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 2em;
+    text-shadow: 4px 4px 6px black;
+}
+
 #kid-space {
     position: absolute;
     bottom: -100%;
@@ -255,6 +264,7 @@ main button {
     width: 35vw;
     transition: top 2s ease-in-out;
 }
+
 
 /* Player info box style */
 hr {

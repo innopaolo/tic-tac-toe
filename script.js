@@ -145,16 +145,36 @@ const gameBoard = (() => {
             _ultimateVictoryCondition(player);
         }
         if (_checkForTie()) {
+
+            // Adds class that will animate grid and then remove after
             document.querySelectorAll(".grid-item").forEach(item => {
-                setTimeout(() => {item.classList.add("tie");
-                item.innerHTML = `<div>${item.textContent}</div>`
-            }, 500);
+                setTimeout(() => {
+                    item.classList.add("tie");
+                    item.innerHTML = `<div>${item.textContent}</div>`
+                }, 500);
 
                 setTimeout(() => {
                     item.classList.remove("tie");
                     item.innerHTML = item.textContent;
                 }, 4500);
             });
+
+            // Add message to confirm game status before removing
+            let tieMessage = document.createElement("h1");
+            tieMessage.textContent = "It's a tie!"
+            tieMessage.classList.add("resultMessage");
+            setTimeout(() => {
+                ticTacToe.appendChild(tieMessage);
+            }, 3500);
+            setTimeout(() => {
+                ticTacToe.removeChild(tieMessage);
+            }, 5000);
+
+            // Reset grid then restart game
+            setTimeout(() => {
+                gameBoard.reset();
+                gameController.startGame();
+            }, 6000);
         }
     };
 
@@ -166,9 +186,9 @@ const gameBoard = (() => {
         _cells.forEach((element, index, array) => {
             array[index] = null;
         });
-        console.log("Resetting game.....................");
-        console.log("....taking longer than expected....");
-        console.log(_cells);
+        document.querySelectorAll(".grid-item").forEach(item => {
+            item.textContent = "";
+        });
     };
 
     return { showCells, setCells, reset };
@@ -182,7 +202,11 @@ const gameController = ((p1, p2) => {
 
     const startGame = () => {
         _currentPlayer = p1;
-        setTimeout( () => { pb1.style.boxShadow = "0 0 50px #FFC34C"; }, 1000);
+        console.log("Start game!");
+        setTimeout( () => {
+            pb2.style.boxShadow = "none" 
+            pb1.style.boxShadow = "0 0 50px #FFC34C"; 
+        }, 1000);
     };
 
     const setPlayerMove = (index) => {
