@@ -70,13 +70,17 @@ startGameBtn.addEventListener("click", () => {
 
 
     // Animate new images and grid to move to visible area
-    const kidSpace = document.querySelector("#kid-space");
-    const potatoAstronaut = document.querySelector("#potato-astronaut");
+    const xSymbol = document.querySelector("#x-symbol");
+    const oSymbol = document.querySelector("#o-symbol");
     const hiddenPlayArea = document.querySelector("#hidden-play-area");
+    const upperXSymbol = document.querySelector("#X-symbol");
+    const upperOSymbol = document.querySelector("#O-symbol");
 
-    kidSpace.classList.add("move-bottom");
-    potatoAstronaut.classList.add("move-top");
+    xSymbol.classList.add("move-bottom");
+    oSymbol.classList.add("move-top");
     hiddenPlayArea.classList.add("opacity-visible");
+    setTimeout(() => { upperOSymbol.classList.add("move-bottom"); }, 1200);
+    setTimeout(() => { upperXSymbol.classList.add("move-bottomPlus"); }, 1800);
 
 
     // Set player name and points in the player info box

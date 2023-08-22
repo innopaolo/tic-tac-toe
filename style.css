@@ -143,6 +143,14 @@ main button {
 .move-bottom {
     bottom: 0 !important;
 }
+.move-bottomPlus{
+    bottom: 80px !important;
+}
+@media (max-width: 768px) {
+    .move-bottomPlus {
+        bottom: 40px !important;
+    }
+}
 .move-top {
     top: 0 !important;
 }
@@ -277,20 +285,37 @@ main button {
     font-size: 1.1em;
 }
 
-#kid-space {
+#x-symbol {
     position: absolute;
     bottom: -100%;
     left: 5px;
-    width: 35vw;
+    width: 25vw;
     transition: bottom 2s ease-in-out;
 }
 
-#potato-astronaut {
+#o-symbol {
     position: absolute;
     top: -100%;
     right: 0;
-    width: 35vw;
+    width: 25vw;
     transition: top 2s ease-in-out;
+}
+
+#X-symbol {
+    position: absolute;
+    bottom: -100%;
+    right: 18px;
+    width: 22vw;
+    transition: bottom 2s ease-in-out;
+    z-index: 1;
+}
+
+#O-symbol {
+    position: absolute;
+    bottom: -90%;
+    right: 6px;
+    width: 20vw;
+    transition: bottom 2s ease-in-out;
 }
 
 
