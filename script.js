@@ -118,6 +118,13 @@ const gameBoard = (() => {
         });
     };
 
+    const _getWinningCombination = (player) => {
+        for (let combination of _winningCombinations) {
+        if (combination.every(index => _cells[index] === player.symbol)) {
+            return combination;
+        }
+    }};
+
     const _ultimateVictoryCondition = (player) => {
         if (player.points === numberOfWins) {
             console.log(`${player.name} has !!Ultimate Victory!!`);
@@ -141,7 +148,45 @@ const gameBoard = (() => {
         // Set win condition
         if (_checkWinner(player.symbol)) {
             player.points++;
+
+            // Adds class that will animate grid and then remove after
+            const combination = _getWinningCombination(player);
+
+            document.querySelectorAll(".grid-item").forEach(item => {
+                if (item.dataset.index == combination[0] ||
+                    item.dataset.index == combination[1] ||
+                    item.dataset.index == combination[2]) { // No strict equality as data-index is string
+                        setTimeout(() => {
+                            item.classList.add("winning-line");
+                            item.innerHTML = `<div>${item.textContent}</div>`
+                        }, 500);
+                    }
+
+                setTimeout(() => {
+                    item.classList.remove("winning-line");
+                    item.innerHTML = item.textContent;
+                }, 4500);
+            });
+
             player.updateInfo();
+
+            // Add message to confirm game status before resetting
+            let winMessage = document.createElement("h1");
+            winMessage.textContent = `${player.name} gets a point!`
+            winMessage.classList.add("resultMessageWin");
+            setTimeout(() => {
+                ticTacToe.appendChild(winMessage);
+            }, 3500);
+            setTimeout(() => {
+                ticTacToe.removeChild(winMessage);
+            }, 6000);
+
+            // Reset grid then restart game
+            setTimeout(() => {
+                gameBoard.reset();
+                gameController.startGame();
+            }, 7000);
+
             _ultimateVictoryCondition(player);
         }
         if (_checkForTie()) {
@@ -159,7 +204,7 @@ const gameBoard = (() => {
                 }, 4500);
             });
 
-            // Add message to confirm game status before removing
+            // Add message to confirm game status before resetting
             let tieMessage = document.createElement("h1");
             tieMessage.textContent = "It's a tie!"
             tieMessage.classList.add("resultMessage");

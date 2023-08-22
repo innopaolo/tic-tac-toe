@@ -220,7 +220,7 @@ main button {
 }
 
 
-/* Grid animation for a tie  */
+/* Grid animation for a tie or a winning line  */
 .grid-item.tie {
     animation-name: changeBGColor;
     animation-duration: 4s;
@@ -239,14 +239,32 @@ main button {
     50% {scale: 1.4;}
     100% {scale: 1.6em;} 
 }
+.grid-item.winning-line {
+    animation-name: changeBGColorWin;
+    animation-duration: 4s;
+}
+@keyframes changeBGColorWin {
+    0% {background-color: #be2e2e;}
+    50% {background-color: #7fa819;}
+    100% {background-color: #be2e2e;}
+}
+.grid-item.winning-line div {
+    animation-name: scaleSymbol;
+    animation-duration: 4s;
+}
 
-
-.resultMessage {
+/* Every tie or win will show this message */
+.resultMessage,
+.resultMessageWin {
     position: absolute;
     top: 0;
     left: 0;
     font-size: 2em;
     text-shadow: 4px 4px 6px black;
+}
+.resultMessageWin {
+    color: #7fa819;
+    font-size: 1.4em;
 }
 
 #kid-space {
