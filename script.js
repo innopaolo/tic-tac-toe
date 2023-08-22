@@ -132,6 +132,7 @@ const gameBoard = (() => {
                 item.dataset.index == combination[1] ||
                 item.dataset.index == combination[2]) { // No strict equality as data-index is string
                     setTimeout(() => {
+                        _disableGridInteraction(true);
                         item.classList.add("winning-line");
                         item.innerHTML = `<div>${item.textContent}</div>`
                     }, 500);
@@ -141,6 +142,16 @@ const gameBoard = (() => {
                         item.classList.remove("winning-line");
                         item.innerHTML = item.textContent;
                     }, 4500);
+        });
+    };
+
+    const _disableGridInteraction = (disable) => {
+        document.querySelectorAll(".grid-item").forEach(item => {
+            if (disable) {
+                item.classList.add("disable-interaction");
+            } else {
+                item.classList.remove("disable-interaction");
+            }
         });
     };
 
@@ -189,6 +200,7 @@ const gameBoard = (() => {
                 setTimeout(() => {
                     gameBoard.reset();
                     gameController.startGame();
+                    _disableGridInteraction(false);
                 }, 6000);
             } else {
 
@@ -207,6 +219,7 @@ const gameBoard = (() => {
                 setTimeout(() => {
                     gameBoard.reset();
                     gameController.startGame();
+                    _disableGridInteraction(false);
                 }, 6000);
             }
 
@@ -215,6 +228,7 @@ const gameBoard = (() => {
             // Adds class that will animate grid and then remove after
             document.querySelectorAll(".grid-item").forEach(item => {
                 setTimeout(() => {
+                    _disableGridInteraction(true);
                     item.classList.add("tie");
                     item.innerHTML = `<div>${item.textContent}</div>`
                 }, 500);
@@ -240,6 +254,7 @@ const gameBoard = (() => {
             setTimeout(() => {
                 gameBoard.reset();
                 gameController.startGame();
+                _disableGridInteraction(false);
             }, 6000);
         }
     };
@@ -295,24 +310,3 @@ const gameController = ((p1, p2) => {
     
     return { startGame, switchPlayer, getCurrentPlayer, setPlayerMove };
 })(player1, player2);
-
-// gameController.startGame();
-// gameController.setPlayerMove(0);
-// gameBoard.showCells();
-// gameController.switchPlayer();
-// gameController.setPlayerMove(2);
-// gameBoard.showCells();
-// gameController.switchPlayer();
-// gameController.setPlayerMove(1);
-// gameBoard.showCells();
-// gameController.switchPlayer();
-// gameController.setPlayerMove(4);
-// gameBoard.showCells();
-// gameController.switchPlayer();
-// gameController.setPlayerMove(7);
-// gameBoard.showCells();
-// gameController.switchPlayer();
-// gameController.setPlayerMove(6);
-// gameBoard.showCells();
-
-// gameBoard.reset();

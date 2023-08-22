@@ -302,3 +302,8 @@ p {
     font-size: 2em;
 }
 
+
+.grid-item.disable-interaction {
+    pointer-events: none;
+}
+
