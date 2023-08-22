@@ -263,6 +263,10 @@ main button {
     font-size: 2em;
     text-shadow: 4px 4px 6px black;
 }
+.resultMessage:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
 .resultMessageWin {
     color: #7fa819;
     font-size: 1.4em;

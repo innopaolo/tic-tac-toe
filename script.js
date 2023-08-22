@@ -132,7 +132,6 @@ const gameBoard = (() => {
                 item.dataset.index == combination[1] ||
                 item.dataset.index == combination[2]) { // No strict equality as data-index is string
                     setTimeout(() => {
-                        _disableGridInteraction(true);
                         item.classList.add("winning-line");
                         item.innerHTML = `<div>${item.textContent}</div>`
                     }, 500);
@@ -185,7 +184,7 @@ const gameBoard = (() => {
 
             // Check if 3 wins has been made
             if (_ultimateVictoryCondition(player)) {
-
+                _disableGridInteraction(true);
                 let victoryMessage = document.createElement("h1");
                 victoryMessage.textContent = `🏆\nVictory to ${player.name}!`
                 victoryMessage.classList.add("resultMessageVictory");
@@ -196,14 +195,27 @@ const gameBoard = (() => {
                     ticTacToe.removeChild(victoryMessage);
                 }, 6000);
 
-                // Reset grid then restart game
+                // Reset grid then ask if play again
                 setTimeout(() => {
                     gameBoard.reset();
-                    gameController.startGame();
-                    _disableGridInteraction(false);
+                    
+                    let playAgain = document.createElement("h1");
+                    playAgain.textContent = "Play again?"
+                    playAgain.classList.add("resultMessage");
+                    ticTacToe.appendChild(playAgain);
+
+                    playAgain.addEventListener("click", () => {
+                        _disableGridInteraction(false);
+                        gameController.startGame();
+                        player1.points = 0;
+                        player2.points = 0;
+                        player1.updateInfo();
+                        player2.updateInfo();
+                        ticTacToe.removeChild(playAgain);
+                    });
                 }, 6000);
             } else {
-
+                _disableGridInteraction(true);
                 // Add message for normal win
                 let winMessage = document.createElement("h1");
                 winMessage.textContent = `${player.name} gets a point!`
@@ -224,11 +236,10 @@ const gameBoard = (() => {
             }
 
         } else if (_checkForTie()) {
-
+            _disableGridInteraction(true);
             // Adds class that will animate grid and then remove after
             document.querySelectorAll(".grid-item").forEach(item => {
                 setTimeout(() => {
-                    _disableGridInteraction(true);
                     item.classList.add("tie");
                     item.innerHTML = `<div>${item.textContent}</div>`
                 }, 500);
