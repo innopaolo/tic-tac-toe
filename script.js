@@ -125,9 +125,28 @@ const gameBoard = (() => {
         }
     }};
 
+    // Grabs grid items that form a line and adds class to animate
+    const _animateWinningGridItems = (combination) => {
+        document.querySelectorAll(".grid-item").forEach(item => {
+            if (item.dataset.index == combination[0] ||
+                item.dataset.index == combination[1] ||
+                item.dataset.index == combination[2]) { // No strict equality as data-index is string
+                    setTimeout(() => {
+                        item.classList.add("winning-line");
+                        item.innerHTML = `<div>${item.textContent}</div>`
+                    }, 500);
+                }
+                    // Remove cosmetic changes to grid
+                    setTimeout(() => {
+                        item.classList.remove("winning-line");
+                        item.innerHTML = item.textContent;
+                    }, 4500);
+        });
+    };
+
     const _ultimateVictoryCondition = (player) => {
         if (player.points === numberOfWins) {
-            console.log(`${player.name} has !!Ultimate Victory!!`);
+            return true;
         }
     };
 
@@ -145,51 +164,53 @@ const gameBoard = (() => {
             _cells[index] = player.symbol;
         }
 
-        // Set win condition
+        // Set win conditions
         if (_checkWinner(player.symbol)) {
             player.points++;
-
-            // Adds class that will animate grid and then remove after
-            const combination = _getWinningCombination(player);
-
-            document.querySelectorAll(".grid-item").forEach(item => {
-                if (item.dataset.index == combination[0] ||
-                    item.dataset.index == combination[1] ||
-                    item.dataset.index == combination[2]) { // No strict equality as data-index is string
-                        setTimeout(() => {
-                            item.classList.add("winning-line");
-                            item.innerHTML = `<div>${item.textContent}</div>`
-                        }, 500);
-                    }
-
-                setTimeout(() => {
-                    item.classList.remove("winning-line");
-                    item.innerHTML = item.textContent;
-                }, 4500);
-            });
-
             player.updateInfo();
 
-            // Add message to confirm game status before resetting
-            let winMessage = document.createElement("h1");
-            winMessage.textContent = `${player.name} gets a point!`
-            winMessage.classList.add("resultMessageWin");
-            setTimeout(() => {
-                ticTacToe.appendChild(winMessage);
-            }, 3500);
-            setTimeout(() => {
-                ticTacToe.removeChild(winMessage);
-            }, 6000);
+            const combination = _getWinningCombination(player);
+            _animateWinningGridItems(combination);
 
-            // Reset grid then restart game
-            setTimeout(() => {
-                gameBoard.reset();
-                gameController.startGame();
-            }, 7000);
+            // Check if 3 wins has been made
+            if (_ultimateVictoryCondition(player)) {
 
-            _ultimateVictoryCondition(player);
-        }
-        if (_checkForTie()) {
+                let victoryMessage = document.createElement("h1");
+                victoryMessage.textContent = `🏆\nVictory to ${player.name}!`
+                victoryMessage.classList.add("resultMessageVictory");
+                setTimeout(() => {
+                    ticTacToe.appendChild(victoryMessage);
+                }, 3500);
+                setTimeout(() => {
+                    ticTacToe.removeChild(victoryMessage);
+                }, 6000);
+
+                // Reset grid then restart game
+                setTimeout(() => {
+                    gameBoard.reset();
+                    gameController.startGame();
+                }, 6000);
+            } else {
+
+                // Add message for normal win
+                let winMessage = document.createElement("h1");
+                winMessage.textContent = `${player.name} gets a point!`
+                winMessage.classList.add("resultMessageWin");
+                setTimeout(() => {
+                    ticTacToe.appendChild(winMessage);
+                }, 3500);
+                setTimeout(() => {
+                    ticTacToe.removeChild(winMessage);
+                }, 6000);
+
+                // Reset grid then restart game
+                setTimeout(() => {
+                    gameBoard.reset();
+                    gameController.startGame();
+                }, 6000);
+            }
+
+        } else if (_checkForTie()) {
 
             // Adds class that will animate grid and then remove after
             document.querySelectorAll(".grid-item").forEach(item => {
@@ -247,7 +268,6 @@ const gameController = ((p1, p2) => {
 
     const startGame = () => {
         _currentPlayer = p1;
-        console.log("Start game!");
         setTimeout( () => {
             pb2.style.boxShadow = "none" 
             pb1.style.boxShadow = "0 0 50px #FFC34C"; 

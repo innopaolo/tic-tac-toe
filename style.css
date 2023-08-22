@@ -255,7 +255,8 @@ main button {
 
 /* Every tie or win will show this message */
 .resultMessage,
-.resultMessageWin {
+.resultMessageWin,
+.resultMessageVictory {
     position: absolute;
     top: 0;
     left: 0;
@@ -265,6 +266,11 @@ main button {
 .resultMessageWin {
     color: #7fa819;
     font-size: 1.4em;
+}
+.resultMessageVictory {
+    color: #2ebebe;
+    text-shadow: 5px 5px 8px black;
+    font-size: 1.1em;
 }
 
 #kid-space {
