@@ -64,7 +64,7 @@ main h1 {
 }
 
 .hidden-content input{
-    background-color: #ff4c4c;
+    background-color: transparent;
     color: #ffce20;
     text-shadow: 4px 4px 5px black;
     width: 10ch;
