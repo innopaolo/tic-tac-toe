@@ -68,6 +68,7 @@ startGameBtn.addEventListener("click", () => {
     const childElements = main.children;
     for (const child of childElements) {
         child.classList.add("move-down");
+        setTimeout(() => { child.style.display = "none"; }, 1500);
     }
     // Ensures start button to animate at the same time as other elements
     startGameBtn.classList.add("disable-hover"); 
