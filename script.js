@@ -126,7 +126,7 @@ const gameBoard = (() => {
         [0, 4, 8], [2, 4, 6]             // Diagonals
     ];
 
-    const _checkWinner = (symbol) => {
+    const checkWinner = (symbol) => {
         return _winningCombinations.some(combination => {
             return combination.every(index => _cells[index] === symbol);
         });
@@ -175,7 +175,7 @@ const gameBoard = (() => {
     };
 
     // Checks if every cell does not hold the value null
-    const _checkForTie = () => {
+    const checkForTie = () => {
         if (_cells.every(cell => cell !== null )) {
             return true;
         } else {
@@ -189,7 +189,7 @@ const gameBoard = (() => {
         }
 
         // Set win conditions
-        if (_checkWinner(player.symbol)) {
+        if (checkWinner(player.symbol)) {
             gameWonOrTie = true;
             player.points++;
             player.updateInfo();
@@ -250,7 +250,7 @@ const gameBoard = (() => {
                 }, 6000);
             }
 
-        } else if (_checkForTie()) {
+        } else if (checkForTie()) {
             gameWonOrTie = true;
             _disableGridInteraction(true);
             // Adds class that will animate grid and then remove after
@@ -298,7 +298,7 @@ const gameBoard = (() => {
         gameWonOrTie = false;
     };
 
-    return { getCells, setCells, reset };
+    return { getCells, setCells, reset, checkWinner, checkForTie };
 })();
 
 
@@ -345,8 +345,50 @@ const gameController = ((p1, p2) => {
 
 // Module pattern for AI functionality
 const AI = (() => {
-    const _minimax = () => {
-        return 1;
+    const _minimax = (cells, depth, isMaximizing) => {
+
+        // Base cases: evaluate the board and return scores
+        if (gameBoard.checkWinner(player2.symbol)) {
+            return 10 - depth; // AI wins, higher score if AI wins sooner
+        } else if (gameBoard.checkWinner(player1.symbol)) {
+            return depth - 10; // Player wins, lower score if player wins sooner
+        } else if (gameBoard.checkForTie()) {
+            return 0; // Tie game
+        }
+
+        // First up is AI maximizing scores
+        if (isMaximizing) {
+            let bestScore = -Infinity;
+            for (let i = 0; i < cells.length; i++) {
+                if (cells[i] === null) {
+                    cells[i] = player2.symbol
+
+                    // Recursive call
+                    let score = _minimax(cells, depth + 1, false);
+
+                    // Update bestScore if needed
+                    bestScore = Math.max(bestScore, score);
+
+                     // Undo the simulated move
+                     cells[i] = null;
+                }
+            }
+            return bestScore;
+
+        // Now do the inverse of above code for human player minimizing     
+        } else {
+            let bestScore = Infinity;
+            for (let i = 0; i < cells.length; i++) {
+                if (cells[i] === null) {
+                    cells[i] = player1.symbol
+
+                    let score = _minimax(cells, depth + 1, true);
+                    bestScore = Math.min(bestScore, score);
+                    cells[i] = null;
+                }
+            }
+            return bestScore;
+        }
     };
 
     const findBestMove = (cells, player) => {
@@ -359,7 +401,7 @@ const AI = (() => {
                 cells[i] = player.symbol
 
                  // Call minimax to evaluate the move
-                let score = _minimax();
+                let score = _minimax(cells, 0, false);
 
                 // Update bestScore and move if necessary
                 if (score > bestScore) {
