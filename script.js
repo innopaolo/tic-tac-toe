@@ -19,6 +19,7 @@ const pb2 = document.querySelector(".pb2"); // Player info box 2 AKA container
 
 let player1 = createPlayer("Player 1", "X", 0, pb1);
 let player2 = createPlayer("Player 2", "O", 0, pb2);
+let AIplayer = createPlayer("AI player", "O", 0, pb2);
 
 
 // Global variables and DOM manipulation
@@ -30,6 +31,7 @@ const input2 = document.querySelector("#hidden-input2");
 const startGameBtn = document.querySelector("#start-game-btn");
 const ticTacToe = document.querySelector("#tic-tac-toe-grid");
 const returnToStartScreen = document.querySelector("#return-btn");
+let isAISelected = false;
 
 player1Element.addEventListener("click", () => {
     input1.style.display = "block";
@@ -37,6 +39,7 @@ player1Element.addEventListener("click", () => {
 });
 
 player2Element.addEventListener("click", () => {
+    AI.toggleAIplayerMode();
     input2.style.display = "block";
     input2.focus();
 });
@@ -49,9 +52,9 @@ startGameBtn.addEventListener("click", () => {
     }
     if (input2.value !== "") {
         player2.name = input2.value;
+    } else if (input2.placeholder == "AI player ") {
+        player2.name = "AI player";
     }
-
-    returnToStartScreen.classList.add("opacity-visible");
 
     // Animate images and start screen out of the way
     const laputaRobot = document.querySelector("#laputa-robot");
@@ -80,6 +83,7 @@ startGameBtn.addEventListener("click", () => {
     xSymbol.classList.add("move-bottom");
     oSymbol.classList.add("move-top");
     hiddenPlayArea.classList.add("opacity-visible");
+    returnToStartScreen.classList.add("opacity-visible");
     setTimeout(() => { upperOSymbol.classList.add("move-bottom"); }, 1200);
     setTimeout(() => { upperXSymbol.classList.add("move-bottomPlus"); }, 1800);
 
@@ -331,3 +335,30 @@ const gameController = ((p1, p2) => {
     
     return { startGame, switchPlayer, getCurrentPlayer, setPlayerMove };
 })(player1, player2);
+
+
+// Module pattern for AI functionality
+const AI = (() => {
+    const minimax = (board, depth, isMaximizing) => {
+
+    };
+
+    const findBestMove = (board) => {
+
+    };
+
+    const toggleAIplayerMode = () => {
+        isAISelected = !isAISelected;
+
+        if (isAISelected) {
+            input2.value = ""; // Erases any typed name to show placeholder
+            input2.placeholder = "AI player "; // Extra space to add right padding 
+            input2.readOnly = true; // Prevent edit so players can see if they chose AI
+        } else {
+            input2.placeholder = "Player 2 "; // Extra space to add right padding 
+            input2.readOnly = false;
+        }
+    };
+
+    return { findBestMove, toggleAIplayerMode };
+})();
