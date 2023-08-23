@@ -14,13 +14,13 @@ body {
     font-family: "Snacker Comic W01 Black", sans-serif;
     color: #ffce20;
     overflow: hidden;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 main {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
     border: 70px solid #fe6f6f;
