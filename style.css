@@ -14,7 +14,7 @@ body {
     font-family: "Snacker Comic W01 Black", sans-serif;
     color: #ffce20;
     overflow: hidden;
-    height: 90vh;
+    height: 100vh;
 }
 
 main {
@@ -354,4 +354,15 @@ p {
 #return-btn:hover {
     cursor: pointer;
     transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+
+    body {
+        height: auto;
+    }
+
+    main {
+        border: 40px solid #fe6f6f;
+    }
 }
