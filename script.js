@@ -31,6 +31,7 @@ const startGameBtn = document.querySelector("#start-game-btn");
 const ticTacToe = document.querySelector("#tic-tac-toe-grid");
 const returnToStartScreen = document.querySelector("#return-btn");
 let isAISelected = false;
+let gameWonOrTie = false; // Let AI know of game state
 
 player1Element.addEventListener("click", () => {
     input1.style.display = "block";
@@ -189,6 +190,7 @@ const gameBoard = (() => {
 
         // Set win conditions
         if (_checkWinner(player.symbol)) {
+            gameWonOrTie = true;
             player.points++;
             player.updateInfo();
 
@@ -249,6 +251,7 @@ const gameBoard = (() => {
             }
 
         } else if (_checkForTie()) {
+            gameWonOrTie = true;
             _disableGridInteraction(true);
             // Adds class that will animate grid and then remove after
             document.querySelectorAll(".grid-item").forEach(item => {
@@ -292,6 +295,7 @@ const gameBoard = (() => {
         document.querySelectorAll(".grid-item").forEach(item => {
             item.textContent = "";
         });
+        gameWonOrTie = false;
     };
 
     return { getCells, setCells, reset };
@@ -327,6 +331,7 @@ const gameController = ((p1, p2) => {
             pb2.style.boxShadow = "none"
         }
 
+        // Execute AI method if player 2 chose AI option
         if (_currentPlayer.name === "AI player") {
             AI.performAIMove(_currentPlayer);
         }
@@ -384,20 +389,25 @@ const AI = (() => {
 
     const performAIMove = (currentPlayer) => {
 
+        if (gameWonOrTie) {
+            return;
+        }
+
         if (currentPlayer.name == "AI player") {
             // Get the cell index for AI's move and update cells array
             const cells = gameBoard.getCells();
-            const aiMove = AI.findBestMove(cells, currentPlayer);
+            const aiMove = findBestMove(cells, currentPlayer);
 
             gameController.setPlayerMove(aiMove);
 
+            // Simuate "thinking" time of AI before every move
+            setTimeout(() => {
+                // Update grid-item corresponding to AI's move
+                const aiGridItem = document.querySelector(`[data-index="${aiMove}"]`);
+                aiGridItem.textContent = currentPlayer.symbol;
 
-
-            // Update grid-item corresponding to AI's move
-            const aiGridItem = document.querySelector(`[data-index="${aiMove}"]`);
-            aiGridItem.textContent = currentPlayer.symbol;
-
-            gameController.switchPlayer();
+                gameController.switchPlayer();
+            }, 700);
         }
     };    
 
