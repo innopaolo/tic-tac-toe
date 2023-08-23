@@ -19,7 +19,6 @@ const pb2 = document.querySelector(".pb2"); // Player info box 2 AKA container
 
 let player1 = createPlayer("Player 1", "X", 0, pb1);
 let player2 = createPlayer("Player 2", "O", 0, pb2);
-let AIplayer = createPlayer("AI player", "O", 0, pb2);
 
 
 // Global variables and DOM manipulation
@@ -100,11 +99,11 @@ ticTacToe.addEventListener("click", (e) => {
     if (clickedItem) {
         const dataIndex = clickedItem.dataset.index;
         const currentPlayer = gameController.getCurrentPlayer();
-
+    
         if (clickedItem.textContent == "") {
-            
             // This will update the _cells array
             gameController.setPlayerMove(dataIndex);
+
             // And this will mark the clicked grid-item
             clickedItem.textContent = currentPlayer.symbol; 
 
@@ -284,9 +283,7 @@ const gameBoard = (() => {
         }
     };
 
-    const showCells = () => {
-        console.log(_cells);
-    };
+    const getCells = () => _cells;
 
     const reset = () => {
         _cells.forEach((element, index, array) => {
@@ -297,7 +294,7 @@ const gameBoard = (() => {
         });
     };
 
-    return { showCells, setCells, reset };
+    return { getCells, setCells, reset };
 })();
 
 
@@ -329,6 +326,10 @@ const gameController = ((p1, p2) => {
             pb1.style.boxShadow = "0 0 50px #FFC34C";
             pb2.style.boxShadow = "none"
         }
+
+        if (_currentPlayer.name === "AI player") {
+            AI.performAIMove(_currentPlayer);
+        }
     };
 
     const getCurrentPlayer = () => _currentPlayer;
@@ -339,12 +340,33 @@ const gameController = ((p1, p2) => {
 
 // Module pattern for AI functionality
 const AI = (() => {
-    const minimax = (board, depth, isMaximizing) => {
-
+    const _minimax = () => {
+        return 1;
     };
 
-    const findBestMove = (board) => {
+    const findBestMove = (cells, player) => {
+        let bestMove = -1;
+        let bestScore = -Infinity;
 
+        for (let i = 0; i < cells.length; i++) {
+            if (cells[i] === null) {
+                // Simulate move on the board
+                cells[i] = player.symbol
+
+                 // Call minimax to evaluate the move
+                let score = _minimax();
+
+                // Update bestScore and move if necessary
+                if (score > bestScore) {
+                    bestScore = score;
+                    bestMove = i;
+                }
+
+                // Undo the simulated move
+                cells[i] = null;
+            }
+        }
+        return bestMove;
     };
 
     const toggleAIplayerMode = () => {
@@ -360,5 +382,25 @@ const AI = (() => {
         }
     };
 
-    return { findBestMove, toggleAIplayerMode };
+    const performAIMove = (currentPlayer) => {
+
+        if (currentPlayer.name == "AI player") {
+            // Get the cell index for AI's move and update cells array
+            const cells = gameBoard.getCells();
+            const aiMove = AI.findBestMove(cells, currentPlayer);
+
+            gameController.setPlayerMove(aiMove);
+
+
+
+            // Update grid-item corresponding to AI's move
+            const aiGridItem = document.querySelector(`[data-index="${aiMove}"]`);
+            aiGridItem.textContent = currentPlayer.symbol;
+
+            gameController.switchPlayer();
+        }
+    };    
+
+    return { findBestMove, toggleAIplayerMode, performAIMove };
+    
 })();
