@@ -4,7 +4,7 @@ This is a simple web-based Tic Tac Toe game implemented using HTML, CSS, and Jav
 
 # Preview
 
-<img src="tictactoe.png" alt="Example Image" width="400" />
+<img src="tictactoe.png" alt="Example Image" width="600" />
 
 ## Game Controls
 
