@@ -4,7 +4,9 @@ This is a simple web-based Tic Tac Toe game implemented using HTML, CSS, and Jav
 
 # Preview
 
-<img src="tictactoe.png" alt="Example Image" width="600" />
+<img src="tictactoe.png" alt="Example Image" width="700" />
+
+Check out the live demo [here!](https://innopaolo.github.io/tic-tac-toe/)
 
 ## Game Controls
 
@@ -13,29 +15,28 @@ This is a simple web-based Tic Tac Toe game implemented using HTML, CSS, and Jav
 
 ## What I Learned
 
-While working on this project, I gained valuable experience in web development and JavaScript. Here are some key takeaways:
+1. **Front-End Development**: Enhanced HTML and CSS skills for responsive UI design with animations.
 
-1. **HTML and CSS**: I improved my HTML and CSS skills by designing a visually appealing user interface for the game. I used CSS animations and transitions to create smooth and engaging user interactions.
+2. **JavaScript Proficiency**: Applied JavaScript for game logic, interactions, and AI opponent moves.
 
-2. **JavaScript**: I deepened my understanding of JavaScript, particularly in the context of web development. I used JavaScript to handle game logic, player interactions, and AI moves using the minimax algorithm. This project allowed me to practice event handling, DOM manipulation, and asynchronous programming.
+3. **Game Development**: Implemented Tic Tac Toe logic, handling win conditions and game flow.
 
-3. **Game Logic**: I learned how to implement the logic for a classic game like Tic Tac Toe. This involved checking for win conditions, detecting ties, and managing the flow of the game.
+4. **AI Development**: Created AI opponent using the minimax algorithm that made it unbeatable.
 
-4. **AI Programming**: Creating an AI opponent was a challenging but rewarding aspect of the project. I delved into the minimax algorithm to make the AI make strategic decisions and compete against human players.
+5. **UX Design**: Focused on user experience, optimizing input and providing informative feedback.
 
-5. **User Experience**: I gained insights into designing a user-friendly interface and improving the overall user experience. This includes handling player input, providing feedback through messages, and ensuring smooth transitions between game states.
+6. **Code Organization**: Employed modular code structure for maintainability and clarity.
 
-6. **Project Organization**: I practiced organizing my code into modules and using the module pattern to encapsulate functionality. This made the code more maintainable and easier to understand.
+7. **Problem Solving**: Developed strong debugging and testing skills to overcome challenges.
 
-7. **Problem Solving**: I encountered various challenges throughout the project and developed problem-solving skills to overcome them. Debugging and testing became integral parts of the development process.
+8. **Version Control**: Utilized Git for effective code management and collaboration.
 
-8. **Version Control**: I used version control tools (e.g., Git) to manage the project's codebase, track changes, and collaborate with others if needed.
 
 ## Technologies Used
 
-- HTML
-- CSS
-- JavaScript
+- ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+- ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)   
+- ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 
 ## Acknowledgments
